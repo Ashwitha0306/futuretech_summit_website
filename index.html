@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureTech Summit 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Syne:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span>FutureTech<em>26</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">🌐 San Francisco · Sept 15–17, 2026</div>
+      <h1>FutureTech<br /><span class="gradient-text">Summit 2026</span></h1>
+      <p class="hero-sub">Where Innovation Meets Tomorrow</p>
+      <p class="hero-desc">The world's premier technology conference uniting the brightest minds in AI, Robotics,
+        Cybersecurity, and Cloud Computing for three transformative days of insight and collaboration.</p>
+      <div class="hero-btns">
+        <a href="#register" class="btn btn-primary glow-btn">Register Now</a>
+        <a href="#speakers" class="btn btn-outline">Explore Speakers</a>
+      </div>
+      <div class="hero-meta">
+        <span>📅 Sept 15–17, 2026</span>
+        <span>📍 Moscone Center, SF</span>
+        <span>🎟️ 5000+ Attendees</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="hex-ring">
+        <div class="hex-item" style="--i:0">🤖</div>
+        <div class="hex-item" style="--i:1">🛡️</div>
+        <div class="hex-item" style="--i:2">☁️</div>
+        <div class="hex-item" style="--i:3">🌐</div>
+        <div class="hex-item" style="--i:4">🔬</div>
+        <div class="hex-item" style="--i:5">💡</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="5000">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Attendees</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="100">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Speakers</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="50">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-plus"></div>
+          <div class="stat-label">Days Event</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPEAKERS ========== -->
+  <section class="section" id="speakers">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Speakers</div>
+        <h2>World-Class <span class="gradient-text">Visionaries</span></h2>
+        <p>Industry leaders shaping the future of technology</p>
+      </div>
+      <div class="speakers-grid">
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#00E5FF,#7B2FF7)">DR</div>
+          <h3>Dr. Rachel Kim</h3>
+          <p class="speaker-title">Chief AI Officer</p>
+          <p class="speaker-company">DeepMind</p>
+          <p class="speaker-bio">Pioneer in reinforcement learning with 15 years experience building neural
+            architectures that power next-generation reasoning systems.</p>
+          <div class="speaker-tags"><span>AI</span><span>ML</span></div>
+        </div>
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#7B2FF7,#00FFB3)">MJ</div>
+          <h3>Marcus Johnson</h3>
+          <p class="speaker-title">VP Engineering</p>
+          <p class="speaker-company">Tesla Robotics</p>
+          <p class="speaker-bio">Led the development of autonomous robotic systems deployed in 40+ countries,
+            specializing in human-robot interaction design.</p>
+          <div class="speaker-tags"><span>Robotics</span><span>IoT</span></div>
+        </div>
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#00FFB3,#00E5FF)">AZ</div>
+          <h3>Aisha Zuberi</h3>
+          <p class="speaker-title">CISO</p>
+          <p class="speaker-company">CrowdStrike</p>
+          <p class="speaker-bio">Global authority on zero-trust architectures and threat intelligence, protecting
+            critical infrastructure across six continents.</p>
+          <div class="speaker-tags"><span>Security</span><span>Cloud</span></div>
+        </div>
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#FF6B6B,#7B2FF7)">KL</div>
+          <h3>Kevin Liu</h3>
+          <p class="speaker-title">Founder & CEO</p>
+          <p class="speaker-company">QuantumLeap</p>
+          <p class="speaker-bio">Serial entrepreneur whose quantum computing startup raised $200M Series B, solving
+            problems once thought computationally intractable.</p>
+          <div class="speaker-tags"><span>Quantum</span><span>Startup</span></div>
+        </div>
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#00E5FF,#FF6B6B)">SP</div>
+          <h3>Sofia Petrov</h3>
+          <p class="speaker-title">Principal Architect</p>
+          <p class="speaker-company">AWS</p>
+          <p class="speaker-bio">Designed cloud infrastructure handling over 10 trillion events daily. Speaker, author,
+            and open-source contributor to the CNCF ecosystem.</p>
+          <div class="speaker-tags"><span>Cloud</span><span>DevOps</span></div>
+        </div>
+        <div class="speaker-card reveal">
+          <div class="speaker-avatar" style="background: linear-gradient(135deg,#00FFB3,#FF6B6B)">TO</div>
+          <h3>Tomas Ortega</h3>
+          <p class="speaker-title">Director of Research</p>
+          <p class="speaker-company">Meta Reality Labs</p>
+          <p class="speaker-bio">Leads immersive technology research bridging the physical and digital worlds, with 40
+            patents in spatial computing and haptics.</p>
+          <div class="speaker-tags"><span>XR</span><span>Web3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRACKS ========== -->
+  <section class="section tracks-section" id="tracks">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Conference Tracks</div>
+        <h2>Explore <span class="gradient-text">Innovation</span> Areas</h2>
+        <p>Six focused tracks covering the full spectrum of emerging technology</p>
+      </div>
+      <div class="tracks-grid">
+        <div class="track-card reveal">
+          <div class="track-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>From large language models to multimodal systems — explore the forefront of machine intelligence and its
+            real-world deployment challenges.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+        <div class="track-card reveal">
+          <div class="track-icon">🧠</div>
+          <h3>Machine Learning</h3>
+          <p>Deep dives into training pipelines, model optimization, federated learning, and the latest breakthroughs in
+            neural architecture search.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+        <div class="track-card reveal">
+          <div class="track-icon">🛡️</div>
+          <h3>Cybersecurity</h3>
+          <p>Zero-trust, AI-powered threat detection, compliance engineering, and securing the next generation of
+            decentralized infrastructure.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+        <div class="track-card reveal">
+          <div class="track-icon">☁️</div>
+          <h3>Cloud Computing</h3>
+          <p>Multi-cloud strategies, serverless at scale, FinOps, edge computing, and building resilient distributed
+            systems for the exabyte era.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+        <div class="track-card reveal">
+          <div class="track-icon">⚙️</div>
+          <h3>Robotics & IoT</h3>
+          <p>Autonomous systems, sensor fusion, real-time edge inference, and the convergence of physical automation
+            with digital intelligence.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+        <div class="track-card reveal">
+          <div class="track-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>WebAssembly, AI-augmented development workflows, performance at scale, and the future of the full-stack
+            engineer in a GenAI world.</p>
+          <a href="#register" class="btn-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCHEDULE ========== -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Event Schedule</div>
+        <h2>Three Days of <span class="gradient-text">Discovery</span></h2>
+        <p>A carefully crafted program blending keynotes, workshops, and networking</p>
+      </div>
+      <div class="schedule-tabs reveal">
+        <button class="tab-btn active" data-day="1">Day 1</button>
+        <button class="tab-btn" data-day="2">Day 2</button>
+        <button class="tab-btn" data-day="3">Day 3</button>
+      </div>
+      <div class="timeline" id="timeline">
+        <!-- Day 1 -->
+        <div class="day-content active" data-day="1">
+          <div class="timeline-item reveal">
+            <div class="timeline-time">09:00 AM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type keynote">Keynote</span>
+              <h3>AI Keynote: Intelligence Unleashed</h3>
+              <p>Opening keynote exploring the state of artificial general intelligence and its transformative impact on
+                industry and society.</p>
+              <div class="timeline-meta"><span>🎤 Dr. Rachel Kim</span><span>⏱ 2 hours</span><span>📍 Main Stage</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-time">02:00 PM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type networking">Networking</span>
+              <h3>Global Networking Session</h3>
+              <p>Structured networking with AI-powered matchmaking to connect attendees based on interests, expertise,
+                and collaboration goals.</p>
+              <div class="timeline-meta"><span>👥 All Attendees</span><span>⏱ 3 hours</span><span>📍 Innovation
+                  Hall</span></div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-time">06:00 PM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type social">Social</span>
+              <h3>Welcome Reception & Demos</h3>
+              <p>Evening reception featuring live technology demos, startup pitches, and cocktails under the Bay Bridge
+                skyline.</p>
+              <div class="timeline-meta"><span>🥂 All Attendees</span><span>⏱ 2 hours</span><span>📍 Rooftop
+                  Terrace</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Day 2 -->
+        <div class="day-content" data-day="2">
+          <div class="timeline-item reveal">
+            <div class="timeline-time">09:30 AM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type workshop">Workshop</span>
+              <h3>Cybersecurity Workshop: Zero-Trust in Practice</h3>
+              <p>Hands-on workshop building a real zero-trust architecture from scratch with live red team exercises and
+                threat simulation.</p>
+              <div class="timeline-meta"><span>🎤 Aisha Zuberi</span><span>⏱ 4 hours</span><span>📍 Lab 3B</span></div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-time">03:00 PM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type showcase">Showcase</span>
+              <h3>Startup Showcase: The Next Unicorns</h3>
+              <p>30 curated startups present live demos to a panel of top-tier investors, followed by public Q&A and
+                live voting.</p>
+              <div class="timeline-meta"><span>🚀 30 Startups</span><span>⏱ 3 hours</span><span>📍 Startup Arena</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Day 3 -->
+        <div class="day-content" data-day="3">
+          <div class="timeline-item reveal">
+            <div class="timeline-time">10:00 AM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type panel">Panel</span>
+              <h3>Future Technology Panel: 2030 and Beyond</h3>
+              <p>Six visionaries debate what the next decade holds for humanity in the age of AGI, autonomous robots,
+                and quantum supremacy.</p>
+              <div class="timeline-meta"><span>🎤 All Speakers</span><span>⏱ 2 hours</span><span>📍 Main Stage</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-time">04:00 PM</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="event-type closing">Closing</span>
+              <h3>Closing Ceremony & Awards Gala</h3>
+              <p>Recognition of the summit's most impactful sessions, startup champions, and announcement of FutureTech
+                Summit 2027 location.</p>
+              <div class="timeline-meta"><span>🏆 All Attendees</span><span>⏱ 2 hours</span><span>📍 Grand
+                  Ballroom</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TICKETS ========== -->
+  <section class="section" id="tickets">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Pricing</div>
+        <h2>Choose Your <span class="gradient-text">Experience</span></h2>
+        <p>Early bird pricing ends August 1st — save up to 40%</p>
+      </div>
+      <div class="tickets-grid">
+        <div class="ticket-card reveal">
+          <div class="ticket-header">
+            <div class="ticket-icon">🎟️</div>
+            <h3>Basic Pass</h3>
+            <div class="ticket-price"><span class="currency">$</span>299<span class="period">/person</span></div>
+            <div class="ticket-original">Was $499</div>
+          </div>
+          <ul class="ticket-features">
+            <li>✅ Conference Access (All 3 Days)</li>
+            <li>✅ Digital Materials & Recordings</li>
+            <li>✅ Community Slack Access</li>
+            <li>✅ Welcome Reception</li>
+            <li>❌ Workshops</li>
+            <li>❌ VIP Lounge</li>
+            <li>❌ Speaker Meet &amp; Greet</li>
+          </ul>
+          <a href="#register" class="btn btn-outline full-width">Get Basic Pass</a>
+        </div>
+        <div class="ticket-card featured reveal">
+          <div class="ticket-badge">Most Popular</div>
+          <div class="ticket-header">
+            <div class="ticket-icon">⭐</div>
+            <h3>Professional Pass</h3>
+            <div class="ticket-price"><span class="currency">$</span>599<span class="period">/person</span></div>
+            <div class="ticket-original">Was $899</div>
+          </div>
+          <ul class="ticket-features">
+            <li>✅ Conference Access (All 3 Days)</li>
+            <li>✅ Digital Materials & Recordings</li>
+            <li>✅ Community Slack Access</li>
+            <li>✅ Welcome Reception</li>
+            <li>✅ All Workshops</li>
+            <li>✅ Networking Events</li>
+            <li>❌ VIP Lounge & Meet &amp; Greet</li>
+          </ul>
+          <a href="#register" class="btn btn-primary glow-btn full-width">Get Pro Pass</a>
+        </div>
+        <div class="ticket-card vip reveal">
+          <div class="ticket-header">
+            <div class="ticket-icon">💎</div>
+            <h3>VIP Pass</h3>
+            <div class="ticket-price"><span class="currency">$</span>1299<span class="period">/person</span></div>
+            <div class="ticket-original">Was $1999</div>
+          </div>
+          <ul class="ticket-features">
+            <li>✅ Conference Access (All 3 Days)</li>
+            <li>✅ Digital Materials & Recordings</li>
+            <li>✅ Community Slack Access</li>
+            <li>✅ Welcome Reception</li>
+            <li>✅ All Workshops</li>
+            <li>✅ VIP Lounge Access</li>
+            <li>✅ Speaker Meet &amp; Greet</li>
+          </ul>
+          <a href="#register" class="btn btn-vip full-width">Get VIP Pass</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Testimonials</div>
+        <h2>What <span class="gradient-text">Attendees</span> Say</h2>
+        <p>From the 2025 edition — 98% said they'd return</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"FutureTech Summit completely redefined my understanding of where AI is headed.
+            The speaker quality was unmatched — I left with a roadmap for my entire team's next two years."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#00E5FF,#7B2FF7)">JL</div>
+            <div>
+              <strong>Jamie Lin</strong>
+              <span>CTO, NovaSpark Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The Cybersecurity workshop alone was worth 10x the ticket price. Real, hands-on,
+            no fluff. I implemented zero-trust in our org within 3 weeks of attending."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#7B2FF7,#00FFB3)">RC</div>
+            <div>
+              <strong>Ravi Chandran</strong>
+              <span>Head of Security, FinEdge Corp</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Met my co-founder at FutureTech 2025. We launched our startup 4 months later and
+            closed seed funding. This summit literally changed my life trajectory."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#00FFB3,#00E5FF)">MW</div>
+            <div>
+              <strong>Maya Winters</strong>
+              <span>Co-Founder, Orbit.ai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI CHATBOT ========== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">FAQ + AI Assistant</div>
+        <h2>Got <span class="gradient-text">Questions?</span></h2>
+        <p>Browse our FAQ or ask our AI assistant anything about the summit</p>
+      </div>
+      <div class="faq-layout">
+        <!-- Accordion FAQ -->
+        <div class="faq-accordion reveal">
+          <div class="faq-item">
+            <button class="faq-question">What is FutureTech Summit? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>FutureTech Summit 2026 is the world's premier technology conference bringing together 5,000+
+                innovators, engineers, and entrepreneurs across 3 immersive days in San Francisco. It covers AI,
+                Robotics, Cybersecurity, Cloud, IoT, and Web Development through keynotes, workshops, and networking
+                events.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How can I register? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>You can register using the registration form on this page. Select your preferred ticket type (Basic,
+                Professional, or VIP), fill in your details, and submit. You'll receive an AI-generated confirmation
+                email with your ticket and event details within minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Are workshops included in my ticket? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Workshops are included in the Professional and VIP passes. Basic pass holders can upgrade or purchase
+                individual workshop add-ons for $99 each. Workshops have limited seats of 50 attendees to ensure a
+                hands-on experience.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is accommodation provided? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Accommodation is not included but we have negotiated special rates with four partner hotels within
+                walking distance of the Moscone Center. VIP pass holders receive priority booking at the conference
+                hotel at a 30% discounted rate.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Will session recordings be available? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Yes! All keynotes and panel sessions are recorded and made available to all registered attendees within
+                72 hours of each session. Recordings remain accessible for 12 months after the event. Workshop
+                recordings are exclusive to Professional and VIP pass holders.</p>
+            </div>
+          </div>
+        </div>
+        <!-- AI Chat -->
+        <div class="ai-chat-box reveal">
+          <div class="chat-header">
+            <span class="chat-status"></span>
+
+            <h3>⚡ AI Summit Assistant</h3>
+
+          </div>
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg bot">
+              <div class="msg-bubble">Hi! I'm the FutureTech Summit AI assistant. Ask me anything — ticket info, speaker
+                details, schedule, workshops, or anything else about the event! 🚀</div>
+            </div>
+          </div>
+          <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Ask about tickets, speakers, schedule..." />
+            <button id="chatSend" class="btn btn-primary">Send</button>
+          </div>
+          <div class="chat-suggestions">
+            <span onclick="sendSuggestion('What speakers will be at the summit?')">👤 Speakers</span>
+            <span onclick="sendSuggestion('Tell me about ticket prices')">🎟️ Tickets</span>
+            <span onclick="sendSuggestion('What workshops are offered?')">🔬 Workshops</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REGISTER ========== -->
+  <section class="section register-section" id="register">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Register Now</div>
+        <h2>Secure Your <span class="gradient-text">Spot</span></h2>
+        <p>Join 5,000+ innovators. Early bird pricing ends August 1st.</p>
+      </div>
+      <div class="register-layout">
+        <div class="register-form-wrap reveal">
+          <div id="registerSuccess" class="register-success hidden">
+            <div class="success-icon">✅</div>
+            <h3>You're Registered!</h3>
+            <div id="successMsg" class="success-detail"></div>
+            <button onclick="resetForm()" class="btn btn-outline" style="margin-top:1rem">Register Another</button>
+          </div>
+          <form id="registerForm" class="register-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="regName" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="regEmail" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Company / Organization</label>
+                <input type="text" id="regCompany" placeholder="Your company name" />
+              </div>
+              <div class="form-group">
+                <label>Ticket Type *</label>
+                <select id="regTicket" required>
+                  <option value="">Select a pass</option>
+                  <option value="Basic Pass – $299">Basic Pass – $299</option>
+                  <option value="Professional Pass – $599">Professional Pass – $599</option>
+                  <option value="VIP Pass – $1299">VIP Pass – $1299</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message / Special Requirements</label>
+              <textarea id="regMessage" placeholder="Dietary requirements, accessibility needs, or any questions..."
+                rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary glow-btn full-width" id="submitBtn">
+              🚀 Complete Registration
+            </button>
+          </form>
+        </div>
+        <div class="register-info reveal">
+          <h3>Why Attend?</h3>
+          <div class="why-item">🎯 <div><strong>World-class speakers</strong>
+              <p>100+ industry leaders sharing cutting-edge insights</p>
+            </div>
+          </div>
+          <div class="why-item">🤝 <div><strong>Premium networking</strong>
+              <p>AI-matched connections with 5,000+ professionals</p>
+            </div>
+          </div>
+          <div class="why-item">🔬 <div><strong>Hands-on workshops</strong>
+              <p>12 intensive workshops with real-world projects</p>
+            </div>
+          </div>
+          <div class="why-item">🌍 <div><strong>Global community</strong>
+              <p>Connect with innovators from 50+ countries</p>
+            </div>
+          </div>
+          <div class="why-item">🎥 <div><strong>On-demand recordings</strong>
+              <p>12 months of access to all session content</p>
+            </div>
+          </div>
+          <div class="register-guarantee">
+            <strong>🔒 Money-Back Guarantee</strong>
+            <p>Full refund available up to 30 days before the event. No questions asked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Contact</div>
+        <h2>Get In <span class="gradient-text">Touch</span></h2>
+        <p>Our team responds within 24 hours on business days</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>hello@futuretech2026.com</p>
+          <p>sponsors@futuretech2026.com</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p>+1 (415) 867-5309</p>
+          <p>Mon–Fri, 9am–6pm PST</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>Moscone Center</p>
+          <p>747 Howard St, San Francisco, CA</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">🌐</div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-btn">𝕏 Twitter</a>
+            <a href="#" class="social-btn">in LinkedIn</a>
+            <a href="#" class="social-btn">▶ YouTube</a>
+            <a href="#" class="social-btn">📷 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span>FutureTech<em>26</em></span>
+          </a>
+          <p>The world's premier technology conference. Connecting innovators, shaping the future.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">▶</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Tracks</h4>
+          <ul>
+            <li><a href="#tracks">Artificial Intelligence</a></li>
+            <li><a href="#tracks">Machine Learning</a></li>
+            <li><a href="#tracks">Cybersecurity</a></li>
+            <li><a href="#tracks">Cloud Computing</a></li>
+            <li><a href="#tracks">Robotics & IoT</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 FutureTech Summit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
